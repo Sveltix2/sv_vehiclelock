@@ -1,6 +1,7 @@
 local ESX = exports['es_extended']:getSharedObject()
 
 local isRunningWorkaround = false
+            --LANG--
 local Vehicle_Opened_Notify = 'Vehicle Opened'
 local Vehicle_Closed_Notify = 'Vehicle Closed'
 local KeyMapping_Name = 'Close Vehicle'
