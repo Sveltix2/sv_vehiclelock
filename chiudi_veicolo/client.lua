@@ -5,7 +5,7 @@ local isRunningWorkaround = false
 local Vehicle_Opened_Notify = 'Vehicle Opened'
 local Vehicle_Closed_Notify = 'Vehicle Closed'
 local KeyMapping_Name = 'Close Vehicle'
-local KeyMapping_Control = 'Close Vehicle'
+local KeyMapping_Control = 'U'
 
 function StartWorkaroundTask()
 	if isRunningWorkaround then
