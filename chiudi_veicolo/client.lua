@@ -1,6 +1,8 @@
 local ESX = exports['es_extended']:getSharedObject()
 
 local isRunningWorkaround = false
+local Vehicle_Opened_Notify = 'Vehicle Opened'
+local Vehicle_Closed_Notify = 'Vehicle Closed'
 
 function StartWorkaroundTask()
 	if isRunningWorkaround then
@@ -82,14 +84,14 @@ function chiudi()
 
 				TaskPlayAnim(PlayerPedId(), ebrei, "fob_click_fp", 8.0, 8.0, -1, 48, 1, false, false, false)
 
-				ESX.ShowNotification('Veicolo chiuso')
+				ESX.ShowNotification(Vehicle_Closed_Notify)
 			elseif lockStatus == 2 then 
 				SetVehicleDoorsLocked(vehicle, 1)
 				PlayVehicleDoorOpenSound(vehicle, 0)
 
 				TaskPlayAnim(PlayerPedId(), ebrei, "fob_click_fp", 8.0, 8.0, -1, 48, 1, false, false, false)
 
-				ESX.ShowNotification("Veicolo aperto")
+				ESX.ShowNotification(Vehicle_Opened_Notify)
 			end
 		end
 
