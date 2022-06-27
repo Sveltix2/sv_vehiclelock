@@ -101,3 +101,7 @@ RegisterKeyMapping('+chiudi_veh', 'Chiudi Veicolo', 'keyboard', "U")
 RegisterCommand('+chiudi_veh', function()
 	chiudi()
 end)
+
+
+-------EXAMPLE
+--ESX.Game.SpawnVehicle('blista', vector3(120.0, -200.0, 30.0), 100.0, function(vehicle) local plate = GetVehicleNumberPlateText(vehicle) TriggerEvent('veicololock', plate) --trigger to add the vehicle to the table end)
