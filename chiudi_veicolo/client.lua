@@ -3,6 +3,8 @@ local ESX = exports['es_extended']:getSharedObject()
 local isRunningWorkaround = false
 local Vehicle_Opened_Notify = 'Vehicle Opened'
 local Vehicle_Closed_Notify = 'Vehicle Closed'
+local KeyMapping_Name = 'Close Vehicle'
+local KeyMapping_Control = 'Close Vehicle'
 
 function StartWorkaroundTask()
 	if isRunningWorkaround then
@@ -98,7 +100,7 @@ function chiudi()
 	end, ESX.Math.Trim(GetVehicleNumberPlateText(vehicle)))
 end
 
-RegisterKeyMapping('+chiudi_veh', 'Chiudi Veicolo', 'keyboard', "U")
+RegisterKeyMapping('+chiudi_veh', KeyMapping_Name, 'keyboard', KeyMapping_Control)
 
 RegisterCommand('+chiudi_veh', function()
 	chiudi()
